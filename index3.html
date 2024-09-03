@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git e GitHub</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+        .code-block {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Introdução ao Git e GitHub</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index2.html">Introdução ao GitHub</a></li>
+                    <li><a href="index3.html">Criando uma Conta e Configurando o GitHub</a></li>
+                    <li><a href="index4.html">Repositórios</a></li>
+                    <li><a href="index5.html">Clonando Repositórios</a></li>
+                    <li><a href="index6.html">Comandos Básicos do Git</a></li>
+                    <li><a href="index7.html">Branches e Merge</a></li>
+                    <li><a href="index8.html">Contribuições e Pull Requests</a></li>
+                    <li><a href="index9.html">Issues e Projetos</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="create-account">
+                <h2>Como criar uma conta no GitHub?</h2>
+                <p>1. Acesse github.com e clique em “Sign up”.</p>
+                <p>2. Preencha o formulário com nome de usuário, e-mail e senha.</p>
+                <p>3. Verifique seu e-mail para confirmar o cadastro.</p>
+                <p>4. Complete a configuração inicial da conta e explore o perfil.</p>
+            </section>
+
+            <section id="first-steps">
+                <h2>Quais são os primeiros passos após a criação da conta no GitHub?</h2>
+                <p>1. Configure seu perfil e informações pessoais nas configurações da conta.</p>
+                <p>2. Crie um repositório: Vá para “New repository” e preencha os detalhes necessários.</p>
+                <p>3. Explore a interface e familiarize-se com recursos como Issues e Pull Requests.</p>
+                <p>4. Configure chaves SSH para conexões seguras (opcional, mas recomendado).</p>
+            </section>
+
+            <section id="git-config">
+                <h2>Configuração Inicial do Git</h2>
+                <p>Após instalar o Git, é necessário configurar seu nome e e-mail. Utilize os seguintes comandos no terminal:</p>
+                <div class="code-block">
+                    git config --global user.name "Seu Nome"<br>
+                    git config --global user.email "seu-email@exemplo.com"
+                </div>
+                <p>Gere e adicione uma chave SSH para conexões seguras:</p>
+                <div class="code-block">
+                    ssh-keygen -t rsa -b 4096 -C "seu-email@exemplo.com"<br>
+                    eval "$(ssh-agent -s)"<br>
+                    ssh-add ~/.ssh/id_rsa
+                </div>
+                <p>Adicione a chave SSH ao GitHub e teste a conexão com:</p>
+                <div class="code-block">
+                ssh -T git@github.com<br>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+            

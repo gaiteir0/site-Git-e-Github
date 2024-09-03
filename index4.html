@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git e GitHub</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+        .code-block {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Introdução ao Git e GitHub</h1>
+            <nav>
+                 <ul class="nav-links">
+                    <li><a href="index2.html">Introdução ao GitHub</a></li>
+                    <li><a href="index3.html">Criando uma Conta e Configurando o GitHub</a></li>
+                    <li><a href="index4.html">Repositórios</a></li>
+                    <li><a href="index5.html">Clonando Repositórios</a></li>
+                    <li><a href="index6.html">Comandos Básicos do Git</a></li>
+                    <li><a href="index7.html">Branches e Merge</a></li>
+                    <li><a href="index8.html">Contribuições e Pull Requests</a></li>
+                    <li><a href="index9.html">Issues e Projetos</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="create-account">
+                <h2>O que é um repositório no GitHub?</h2>
+                <p>É um local para armazenar e gerenciar arquivos de código e seu histórico de alterações.</p>
+            </section>
+
+            <section id="first-steps">
+                <h2>Como criar um novo repositório no GitHub?</h2>
+                <p>1. Faça login no GitHub.</p>
+                <p>2. Clique em “+” no canto superior direito e selecione “New repository”.</p>
+                <p>3. Preencha as informações e clique em “Create repository”.</p>
+            </section>
+
+            <section id="git-config">
+                <h2>Qual é a diferença entre um repositório público e um repositório privado?</h2>
+                <p>1. Público: Qualquer pessoa pode ver e contribuir.</p>
+                <p>2. Privado: Apenas pessoas autorizadas podem ver e colaborar.</p>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git e GitHub</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Introdução ao Git e GitHub</h1>
+            <nav>
+                 <ul class="nav-links">
+                    <li><a href="index2.html">Introdução ao GitHub</a></li>
+                    <li><a href="index3.html">Criando uma Conta e Configurando o GitHub</a></li>
+                    <li><a href="index4.html">Repositórios</a></li>
+                    <li><a href="index5.html">Clonando Repositórios</a></li>
+                    <li><a href="index6.html">Comandos Básicos do Git</a></li>
+                    <li><a href="index7.html">Branches e Merge</a></li>
+                    <li><a href="index8.html">Contribuições e Pull Requests</a></li>
+                    <li><a href="index9.html">Issues e Projetos</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="git">
+                <h2>O que é Git?</h2>
+                <p>O Git é um sistema de controle de versão de arquivos; em outras palavras, é responsável por guardar o histórico de alterações sempre que alguém modificar algum arquivo que está sendo monitorado por ele.</p>
+            </section>
+
+            <section id="github">
+                <h2>O que é GitHub?</h2>
+                <p>O GitHub é uma plataforma que utiliza o Git e funciona como uma “rede social dev”. É possível armazenar e compartilhar projetos de desenvolvimento de software através dela.</p>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+            

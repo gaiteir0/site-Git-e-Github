@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Git e GitHub</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <style>
+        .code-block {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Introdução ao Git e GitHub</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index2.html">Introdução ao GitHub</a></li>
+                    <li><a href="index3.html">Criando uma Conta e Configurando o GitHub</a></li>
+                    <li><a href="index4.html">Repositórios</a></li>
+                    <li><a href="index5.html">Clonando Repositórios</a></li>
+                    <li><a href="index6.html">Comandos Básicos do Git</a></li>
+                    <li><a href="index7.html">Branches e Merge</a></li>
+                    <li><a href="index8.html">Contribuições e Pull Requests</a></li>
+                    <li><a href="index9.html">Issues e Projetos</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">Menu</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="create-account">
+                <h2> Quais são os principais comandos do Git que são usados com frequência? (git init, git
+clone, git add, git commit, git push, git pull)</h2>
+                <p>git init: Inicializa um novo repositório.</p>
+                <p>git clone [URL]: Clona um repositório existente.</p>
+                <p>git add [arquivo]: Adiciona arquivos ao estágio de commit.</p>
+                <p>git commit -m "mensagem": Salva mudanças com uma mensagem.</p>   
+                <p>git push: Envia mudanças para o repositório remoto.</p>    
+                <p>git pull: Atualiza o repositório local com mudanças do remoto</p>
+</section>
+            </section>
+
+            <section id="first-steps">
+                <h2>como fazer commits e qual a importância de uma mensagem de commit clara e
+descritiva?</h2>
+                <p>Para fazer commits, use git commit -m "mensagem". Mensagens claras e descritivas ajudam a entender as mudanças feitas e facilitam a colaboração.</p>
+            </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
